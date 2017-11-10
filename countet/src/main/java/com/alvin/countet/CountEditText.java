@@ -31,19 +31,22 @@ import android.widget.TextView;
  * hint: 设置EditText的提示
  *
  * bg_color: 设置EditText的背景
+ * text_color: 设置EditText的文字颜色
+ * hint_color: 设置EditText的提示文字颜色
+ * count_color: 设置计数的提示文字颜色
  * 调用示例：
  * 在引用布局中自定义命名空间
- * xmlns:ID10000="http://schemas.android.com/apk/res-auto"
+ * xmlns:app="http://schemas.android.com/apk/res-auto"
  *
  * <包名.CountEditText
     	android:id="@+id/edit_count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        ID10000:maxLength="100"
-        ID10000:textSize="16dip"
-        ID10000:hasClear="true"
-        ID10000:hint="@string/feedback_hint"
+ 		app:maxLength="100"
+ 		app:textSize="16dip"
+ 		app:hasClear="true"
+ 		app:hint="@string/feedback_hint"
     />
  */
 public class CountEditText extends FrameLayout implements TextWatcher {
