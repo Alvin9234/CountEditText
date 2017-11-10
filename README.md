@@ -1,4 +1,11 @@
 # CountEditText
+
+```Java
+使用方法：可以下载源码或者添加依赖
+compile 'com.github.Alvin9234:CountEditText:V1.0'
+```
+
+
 限制 EditText 的输入范围
 
 maxLength：EditText的输入上限
