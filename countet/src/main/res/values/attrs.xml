@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--计数EditText-->
+    <declare-styleable name="count_edittext">
+        <attr name="maxLength" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="hasClear" format="boolean" />
+        <attr name="hint" format="string" />
+        <attr name="hint_color" format="color" />
+        <attr name="content" format="string" />
+        <attr name="bg_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="count_color" format="color" />
+    </declare-styleable>
+</resources>
