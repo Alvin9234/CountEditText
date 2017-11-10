@@ -34,4 +34,6 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 ```
 
 结果如下
+
+
 ![image](https://github.com/Alvin9234/CountEditText/blob/master/screenshoot/preview.jpg)
