@@ -32,3 +32,6 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         app:hint="@string/feedback_hint"
     />
 ```
+
+结果如下
+![image](https://github.com/Alvin9234/CountEditText/blob/master/screenshoot/preview.jpg)
