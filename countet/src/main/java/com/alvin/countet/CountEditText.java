@@ -126,10 +126,20 @@ public class CountEditText extends FrameLayout implements TextWatcher {
 	@Override
 	public void afterTextChanged(Editable s) {
 		mTextView.setText(s.length()+"/"+maxLength);
-		if(hasClear && s.length()>0){
-			mClearContent.setVisibility(View.VISIBLE);
+		if(hasClear){
+			if(s.length()>0){
+				mClearContent.setVisibility(View.VISIBLE);
+				content = s.toString();
+			}else{
+				content = "";
+			}
 		}else{
 			mClearContent.setVisibility(View.GONE);
+			if(s.length()>0){
+				content = s.toString();
+			}else{
+				content = "";
+			}
 		}
 	}
 
@@ -143,5 +153,48 @@ public class CountEditText extends FrameLayout implements TextWatcher {
 			mTextView.setText("0/" + maxLength);
 			mEditText.setFilters(new InputFilter[]{new InputFilter.LengthFilter(maxLength)});
 		}
+	}
+
+	public int getMaxLength() {
+		return maxLength;
+	}
+
+	public String getContent(){
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+		if(!TextUtils.isEmpty(content)){
+			mEditText.setText(content);
+			mTextView.setText(content.length()+"/"+maxLength);
+		}
+	}
+
+	public void setHint(String hint) {
+		this.hint = hint;
+		if(!TextUtils.isEmpty(hint)){
+			mEditText.setHint(hint);
+		}
+	}
+
+	public void setBg_color(int bg_color) {
+		this.bg_color = bg_color;
+		mEditText.setBackgroundColor(bg_color);
+	}
+
+	public void setCount_color(int count_color) {
+		this.count_color = count_color;
+		mTextView.setTextColor(count_color);
+	}
+
+	public void setHint_color(int hint_color) {
+		this.hint_color = hint_color;
+		mEditText.setHintTextColor(hint_color);
+	}
+
+	public void setText_color(int text_color) {
+		this.text_color = text_color;
+		mEditText.setTextColor(text_color);
 	}
 }
