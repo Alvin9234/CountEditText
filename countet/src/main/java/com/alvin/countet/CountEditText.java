@@ -77,7 +77,7 @@ public class CountEditText extends FrameLayout implements TextWatcher {
 		dimension = mTypedArray.getDimension(R.styleable.count_edittext_textSize, 12)/density;//没有声明，默认12号字体
 		hasClear = mTypedArray.getBoolean(R.styleable.count_edittext_hasClear, false);
 		hint = mTypedArray.getString(R.styleable.count_edittext_hint);
-		content = mTypedArray.getString(R.styleable.count_edittext_content);
+		content = mTypedArray.getString(R.styleable.count_edittext_text);
 		bg_color = mTypedArray.getColor(R.styleable.count_edittext_bg_color,0xFFFFFFFF);//EditText背景默认白色
 		hint_color = mTypedArray.getColor(R.styleable.count_edittext_hint_color,0xFFBFBFBF);//EditText提示颜色
 		text_color = mTypedArray.getColor(R.styleable.count_edittext_text_color,0xFF000000);//EditText字体颜色默认黑色
