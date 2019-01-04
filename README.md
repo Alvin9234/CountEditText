@@ -1,4 +1,17 @@
 # CountEditText
+```Java
+implementation 'com.github.alvin9234:countedittext:1.0.3'
+
+项目根目录的gradle添加
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+
 限制 EditText 的输入范围
 
 maxLength：EditText的输入上限
